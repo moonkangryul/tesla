@@ -30,7 +30,7 @@ html {
  */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -91,6 +91,7 @@ pre {
  */
 
 a {
+  padding-top: 6px;
   background-color: transparent;
 }
 

@@ -22,7 +22,7 @@
 
 .navigation ul li {
   width: 100%;
-  padding: 1.2rem 0;
+  padding: 10px 0;
   padding-left: 2rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
@@ -35,6 +35,23 @@
   font-weight: 600;
   font-size: 1.5rem;
   text-transform: capitalize;
+}
+.onl{
+  display: grid;
+  grid-template-columns: 40px 3fr;
+}
+.nav_link p{
+  font-size: 12px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.nav_link p:hover{
+
+  text-decoration: underline;
+}
+
+.nav_link a:nth-child(1){
+  order: 2;
 }
 
 .navigation ul li:hover {

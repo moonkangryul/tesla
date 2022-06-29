@@ -7,6 +7,7 @@
   z-index: 5;
   display: flex;
   justify-content: space-between;
+  animation: slideInFadein 1.5s;
 }
 
 .header_middle {

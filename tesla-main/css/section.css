@@ -30,38 +30,41 @@
 }
 
 .section_content {
+  
   position: absolute;
   top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   text-align: center;
   text-transform: capitalize;
   color: var(--primary-color);
+  
 }
 
 .section_content_title {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  animation: slideInFromBottoms 1s;
 }
 
 .section_content_subtitle {
   font-size: 1.5rem;
   font-weight: 500;
+  animation: slideInFromBottoms 2s;
 }
 
 .section_content_subtitle a {
   color: inherit;
+  border-bottom: solid 1px;
 }
 
 .section_content_subtitle a:hover {
-  text-decoration: underline;
-}
+  border-bottom: solid 2px;
+} 
 
 .section_action_container {
   position: absolute;
-  bottom: 10%;
+  bottom: 14%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -84,17 +87,71 @@
 .action_btn_primary {
   background: rgba(23, 26, 42, 0.8);
   color: white;
+  animation: slideInFromLeft 2s;
 }
 
 .action_btn_secondary {
   background: rgba(255, 255, 255, 0.65);
   color: var(--primary-color);
+  animation: slideInFromRight 2s;
 }
-@keyframes fadeOut {
+@keyframes slideInFromLeft {
   0% {
-    opacity: 1;
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  50% {
+    opacity: 0;
+    
   }
   100% {
+    transform: translateX(0);
+  }
+}
+/* 오른쪽에서 왼쪽으로 */
+@keyframes slideInFromRight {
+  0% {
     opacity: 0;
+    transform: translateX(30%);
+  }
+  50% {
+    opacity: 0;
+    
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* 위에서 아래로 */
+@keyframes slideInFadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* 아래에서 위로 */
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+@keyframes slideInFromBottoms {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  40% {
+    opacity: 0;
+    
+  }
+  100% {
+    transform: translatex(0);
   }
 }

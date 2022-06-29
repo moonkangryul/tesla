@@ -5,13 +5,14 @@
 
 @media screen and (min-width: 600px) {
 	.section_action_btn {
-		max-width: 30rem;
-		padding: 1.5rem;
+		max-width: 26rem;
+		padding: 1rem;
 		flex-basis: 47%;
+		margin: 10px;
 	}
 
 	.section_action_container {
-		justify-content: space-around;
+		display: flex;
 	}
 }
 
@@ -21,7 +22,7 @@
 	}
 
 	.footer ul {
-		width: 70%;
+		width: 500px;
 	}
 }
 
@@ -48,13 +49,14 @@
 	}
 
 	.footer ul {
-		width: 50%;
+		font-size: 5px;
+		width: 500px;
 	}
 }
 
 @media screen and (min-width: 1600px) {
 	.footer ul {
-		width: 40%;
+		width: 500px;
 	}
 
 	.section_action_container {

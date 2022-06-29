@@ -79,7 +79,7 @@
     // slide nav
     var SLIDES_NAV =            'fp-slidesNav';
     var SLIDES_NAV_SEL =        '.' + SLIDES_NAV;
-    var SLIDES_NAV_LINK_SEL =   SLIDES_NAV_SEL + ' a';
+    var SLIDES__SEL =   SLIDES_NAV_SEL + ' a';
     var SLIDES_ARROW =          'fp-controlArrow';
     var SLIDES_ARROW_SEL =      '.' + SLIDES_ARROW;
     var SLIDES_PREV =           'fp-prev';
@@ -121,7 +121,7 @@
 
             //scrolling
             css3: true,
-            scrollingSpeed: 700,
+            scrollingSpeed: 200,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,
